@@ -11,18 +11,15 @@ Content
 Date/Time
 """
 
-notebook = []
 counter = 1
-note_id = counter
-
-
-counter += 1
-
+notebook = []
 now = date.today()
 
-content = "This is content"
 
-note = (note_id, str(now), content)
-
-notebook.append(note)
-print(notebook)
+while counter <= 5:
+    content = input("what is the note? \n>")
+    note_id = counter
+    note = (note_id, str(now), content)
+    counter += 1
+    notebook.append(note)
+    print(notebook)
